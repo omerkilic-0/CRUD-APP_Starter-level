@@ -1,47 +1,45 @@
-# Starter-level_CRUD-APP
-# Konu
-Başlangıç seviye PHP uygulamasıdır.
-CRUD APP yani Cread, Read, Update ve Delete özelliklerini bulunduran ve MySql ile bağlantılı bir web sayfası yapmak isteyenler için oldukça kolay başlangıç seviye bir uygulamadır.
+# Starter-level CRUD APP
+# Topic
+This is a beginner-level PHP application.
+It is a simple starting point for those who want to create a web page with CRUD (Create, Read, Update, Delete) features connected to MySql.
 
-# Veri Tabanı 
-MySql yani phpMyAdmin üzerinde "user" adlı veri tabanını oluşturuyoruz. Oluşturduğumuz veri tabanına "users" isimli bir tablo oluşturarak sırasıyla 5 sütun ekliyoruz. 
+# Database
+We create a MySql database named "user" using phpMyAdmin. Within this database, we create a table named "users" and add 5 columns:
+
 1- "id" int(11) Auto_Increment
 2- "User_name" varchar(250)
 3- "email" varchar(250)
 4- "password" varchar(250)
-5- "user_typ"e varchar(250)
-Daha sonra giriş yapıldıktan sonra yorum yapmamız için "nodejs_ccomment" isimli veri tabanımızı hazırlıyoruz. Ve sırasıyla 3 sütunumuzu ekliyoruz.
+5- "user_type" varchar(250)
+After logging in, we prepare our "nodejs_comment" database for leaving comments. We add 3 columns:
 1- "id" int(20)
 2- "user_name" varchar(300)
 3- "comment" varchar(300)
-Bu işlemi "php_comment" ve "python_comment" tablo isimlerini vererek 2 kere daha tekrarlıyoruz.
+We repeat this process twice more, naming the tables "php_comment" and "python_comment."
+File Structure
 
-# Dosya yapısı
 ```
 CRUD APP
 ├── admin 
 └── image
 ```
-
 # Details
-Giriş sayfası yani index.php sayfasında navbar ve Welcome bölümü bulunmaktadır. Navbar'da Sign In ve Log In seçenekleri bulunmaktadır. 
+The index.php page contains a navbar and a Welcome section. The navbar includes Sign In and Log In options.
 
 # Sign In
-Sign In sayfasında alışılmış olan İsim ve Soyisim girme, Email adersi, Şifre ve şifre doğrulama inputları bulunmaktadır. Ve bulunan bu inmuptlar hem html Required hemde PHP kodları ile dinamik hale getirilmiştir. Hatalı veya eksik bilgi girildiğinde uyaru vermektedir. MySql Veri Tabanımızda email aderesi yalnızca 1 kez kullanılacak şekilde ayarlandığı ve PHP ile kontrolü sağlanarak aynı eposta adersinin 2. kez kullanılmamasını kontrol ediyoru. Daha sonra şifre ve şifre doğrulama alanlarının uyuşmalarını kontrol ettiktten sonra Password_hash özelliği ile kabul edilen şifrenin kriptolanarak Veri Tabanına Kayıt ettiriyoruz.
+The Sign In page includes typical inputs for First Name, Last Name, Email Address, Password, and Password Confirmation. These inputs are both set as "Required" in HTML and dynamically validated using PHP code. If incorrect or incomplete information is entered, appropriate alerts are shown. To prevent the use of the same email address twice, we ensure that the email address in the MySql database is unique. After confirming the match of the password and its confirmation, the accepted password is encrypted using the Password_hash feature and then stored in the database.
 
 # Log In
-Log In sayfamızda daha önceden kayıt olurakn girdiğimiz Name Surname ve Şifer bilgilerimizi girerek giriş işlemini tamalıyoruz. Ayrıca Show Password diyerekte şifre görünür hale getirterek kullanıcı dostu bir sayfa tasarlamış oldul. Ayrıca yalnış girilen bilgiler için PHP uyarılarıda verilmektedir.
+On the Log In page, we enter the previously registered Name, Surname, and Password to complete the login process. Additionally, a "Show Password" option is available to make the password visible, enhancing user-friendliness. PHP warnings are also provided for incorrect input.
 
-# User Girişi
-User yani normal kullanıcılar girdiğinde içerideki bilgi sayfasına erişim sağlarak istediği başlık hakkında bilgi almak için üstüne tıklayrak açabilir ve en alt kısımda dinamik halde bulunan yorum bölümüne yorum yapabilir. Yapılan yotumlar sayfanın altında otomatik olarak listelenecektir.
+# User Access
+Regular users can access information pages for various topics. Clicking on a topic opens a page with details, and at the bottom, there's a dynamic comment section where users can leave comments. The comments made are automatically listed at the bottom of the page.
 
-# Admin Girişi (Veri tabanı üzerinden yetki verilir)
-Admin yani yetkili kişi giriş yaptıktan sonra user kullanıcılar gibi bilgi sayfalarının dışında navbar' da bulunan kontrol paneline erişim sağlayabilir.
+# Admin Access (Authorized through the database)
+Once logged in as an admin, users can access the control panel from the navbar. In the control panel, new users can be added or existing user accounts can be deleted. Admins can also edit usernames and email addresses of existing users.
 
-# Control Panell
-Admin kullanıcıların erişebilgiği bu sayfada yeni kullanıcı eklene bilir veya kullanıcı hesaplarını silebilir. Aynı zamanda eski kullanıcıların kullanıcı adını ve email adreslerini düzenleye bilir.
+# Control Panel
+Admins have access to this page, where they can add new users, delete user accounts, and modify the usernames and email addresses of existing users.
 
-
-
-# Uygulama Bilgisi
-Bu uygulama 01.08.2023 - 28.08.2023 tarihlerinde Tren Ödeme A. Ş.(PAYGURU) şirketinde yaptığım stajda yazdım.
+# Application Information
+I developed this application during my internship at Train Payment Inc. (PAYGURU) from August 1st, 2023, to August 28th, 2023.
