@@ -41,3 +41,7 @@ Admin yani yetkili kişi giriş yaptıktan sonra user kullanıcılar gibi bilgi 
 # Control Panell
 Admin kullanıcıların erişebilgiği bu sayfada yeni kullanıcı eklene bilir veya kullanıcı hesaplarını silebilir. Aynı zamanda eski kullanıcıların kullanıcı adını ve email adreslerini düzenleye bilir.
 
+
+
+# Uygulama Bilgisi
+Bu uygulama 01.08.2023 - 28.08.2023 tarihlerinde Tren Ödeme A. Ş.(PAYGURU) şirketinde yaptığım stajda yazdım.
