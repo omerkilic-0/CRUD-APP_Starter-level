@@ -41,8 +41,12 @@ Once logged in as an admin, users can access the control panel from the navbar. 
 # Control Panel
 Admins have access to this page, where they can add new users, delete user accounts, and modify the usernames and email addresses of existing users.
 
-# İmages
-<a href="http://www.somesite.com"><img src="http://www.example.com/logo.jpg" alt="Logo"></a>
-
 # Application Information
 I developed this application during my internship at Train Payment Inc. (PAYGURU) from August 1st, 2023, to August 28th, 2023.
+
+# İmages
+![Ekran görüntüsü 2023-08-29 152000](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/67803042-4d7d-4f6a-97ff-11baba9118a1)
+![Ekran görüntüsü 2023-08-29 152008](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/7bef9e48-c2fa-4939-ba1b-09f2cd5e47f7)
+![Ekran görüntüsü 2023-08-29 152014](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/c7750ccd-8639-4ca7-972b-ba7c533b5038)
+![Ekran görüntüsü 2023-08-29 152027](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/f61c6c49-a85b-4ff9-9833-122240370bbb)
+![Ekran görüntüsü 2023-08-29 152054](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/238c7637-0ee5-445c-8ee6-ea5559a9db08)
