@@ -41,5 +41,8 @@ Once logged in as an admin, users can access the control panel from the navbar. 
 # Control Panel
 Admins have access to this page, where they can add new users, delete user accounts, and modify the usernames and email addresses of existing users.
 
+# İmages
+<a href="http://www.somesite.com"><img src="http://www.example.com/logo.jpg" alt="Logo"></a>
+
 # Application Information
 I developed this application during my internship at Train Payment Inc. (PAYGURU) from August 1st, 2023, to August 28th, 2023.
