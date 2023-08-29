@@ -44,6 +44,9 @@ Admins have access to this page, where they can add new users, delete user accou
 # Application Information
 I developed this application during my internship at Train Payment Inc. (PAYGURU) from August 1st, 2023, to August 28th, 2023.
 
+# License
+This project is licensed under the MIT License. See the LICENSE.md file for details.
+
 # İmages
 ![Ekran görüntüsü 2023-08-29 152000](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/67803042-4d7d-4f6a-97ff-11baba9118a1)
 ![Ekran görüntüsü 2023-08-29 152008](https://github.com/omerkilic-0/Starter-level_CRUD-APP/assets/123635257/7bef9e48-c2fa-4939-ba1b-09f2cd5e47f7)
