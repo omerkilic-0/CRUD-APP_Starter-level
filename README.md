@@ -4,17 +4,17 @@ This is a beginner-level PHP application.
 It is a simple starting point for those who want to create a web page with CRUD (Create, Read, Update, Delete) features connected to MySql.
 
 # Database
-We create a MySql database named "user" using phpMyAdmin. Within this database, we create a table named "users" and add 5 columns:
+We create a MySql database named "users" using phpMyAdmin. Within this database, we create a table named "users" and add 5 columns:
 
-1- "id" int(11) Auto_Increment
-2- "User_name" varchar(250)
-3- "email" varchar(250)
-4- "password" varchar(250)
-5- "user_type" varchar(250)
+1. "id" int(11) Auto_Increment
+2. "User_name" varchar(250)
+3. "email" varchar(250)
+4. "password" varchar(250)
+5. "user_type" varchar(250)
 After logging in, we prepare our "nodejs_comment" database for leaving comments. We add 3 columns:
-1- "id" int(20)
-2- "user_name" varchar(300)
-3- "comment" varchar(300)
+1. "id" int(20)
+2. "user_name" varchar(300)
+3. "comment" varchar(300)
 We repeat this process twice more, naming the tables "php_comment" and "python_comment."
 File Structure
 
