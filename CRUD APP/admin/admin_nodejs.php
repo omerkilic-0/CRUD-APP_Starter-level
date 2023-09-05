@@ -119,18 +119,13 @@ mysqli_close($connect);
 
     </center>
 
-        <!-- Beğenme Başlangıç-->
-        <!-- <center>
-            <button>
-                <i class="fa-regular fa-thumbs-up" style="font-size: xx-large; margin: 5px;"></i>
-            </button>
-            <button>
-                <i class="fa-regular fa-thumbs-down" style="font-size: xx-large; margin: 5px;"></i>
-            </button>
-        </center> -->
-        <!--Beğenme Bitiş -->
+    <div class="card-footer text-body-secondary">
+        <center>
+            <p>Design by <a href="https://www.linkedin.com/in/%C3%B6mer-k%C4%B1l%C4%B1%C3%A7-5513b1252" target="_blank" style="text-decoration: none; color:black;"><b>ÖMER KILIÇ </b></a> | &copy; 2023</p>
+        </center>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
