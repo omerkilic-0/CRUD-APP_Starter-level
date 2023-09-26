@@ -201,99 +201,109 @@ if (isset($_POST["submit"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+          integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>CRUD APP</title>
 </head>
 
 <body>
 
-    <!--NavBar Başlangıç-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">CRUD APP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign_in.php">Sign In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="log_in.php">Log In</a>
-                    </li>
-                </ul>
-            </div>
+<!--NavBar Başlangıç-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">CRUD APP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="sign_in.php">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="log_in.php">Log In</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <!--NavBar Bitiş-->
-
-    <!--İnput Başlangıç-->
-    <div class="signin">
-        <!--kaydet buton işlevi çalışması için action ekliyoruz. php kodları nerede yazılacak ise o dosya yolu yazılır. post methodu ekledik-->
-        <form action="sign_in.php" method="post">
-
-            <h1>Sign in</h1>
-            <!--bağlantıda kullanılmak üzere name oluşturuldu-->
-            <div class="name">
-                <label for="namesurname">Name Surname:</label>
-                <input type="text" class="input" name="namesurname" id="name" maxlength="15" size="20" placeholder="Dylan Davsen">
-            </div>
-
-            <?php
-
-            echo $name_err
-
-            ?>
-
-            <div class="email">
-                <label for="email">Email Adress:</label>
-                <input type="email" class="input" name="email" id="email" maxlength="40" size="20" placeholder="example@gmail.com">
-            </div>
-
-            <?php
-
-            echo $email_err
-
-            ?>
-
-            <div class="password">
-                <label for="password">Password:</label>
-                <input type="password" class="input password" name="password" id="password" maxlength="15" size="20" placeholder="paSSword123">
-            </div>
-
-            <?php
-
-            echo $password_err
-
-            ?>
-
-            <div class="passwordagain">
-                <label for="password">Password Again:</label>
-                <input type="password" class="input password" name="passwordagain" id="passwordagain" maxlength="15" size="20" placeholder="paSSword123">
-            </div>
-            <?php
-
-            echo $passwordagain_err
-
-            ?>
-
-            <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" name="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                <label class="form-check-label-black" for="invalidCheck3">
-                    i'am not a robot
-                </label>
-            </div>
-
-            <div class="submit">
-                <button type="submit" id="submit" class="btn btn-primary d-grid gap-2" name="submit">Submit</button>
-            </div>
-
-        </form>
     </div>
-    <!--İnput Bitiş-->
+</nav>
+<!--NavBar Bitiş-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!--İnput Başlangıç-->
+<div class="signin">
+    <!--kaydet buton işlevi çalışması için action ekliyoruz. php kodları nerede yazılacak ise o dosya yolu yazılır. post methodu ekledik-->
+    <form action="sign_in.php" method="post">
+
+        <h1>Sign in</h1>
+        <!--bağlantıda kullanılmak üzere name oluşturuldu-->
+        <div class="name">
+            <label for="namesurname">Name Surname:</label>
+            <input type="text" class="input" name="namesurname" id="name" maxlength="15" size="20"
+                   placeholder="Dylan Davsen">
+        </div>
+
+        <?php
+
+        echo $name_err
+
+        ?>
+
+        <div class="email">
+            <label for="email">Email Adress:</label>
+            <input type="email" class="input" name="email" id="email" maxlength="40" size="20"
+                   placeholder="example@gmail.com">
+        </div>
+
+        <?php
+
+        echo $email_err
+
+        ?>
+
+        <div class="password">
+            <label for="password">Password:</label>
+            <input type="password" class="input password" name="password" id="password" maxlength="15" size="20"
+                   placeholder="paSSword123">
+        </div>
+
+        <?php
+
+        echo $password_err
+
+        ?>
+
+        <div class="passwordagain">
+            <label for="password">Password Again:</label>
+            <input type="password" class="input password" name="passwordagain" id="passwordagain" maxlength="15"
+                   size="20" placeholder="paSSword123">
+        </div>
+        <?php
+
+        echo $passwordagain_err
+
+        ?>
+
+        <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" name="checkbox" value="" id="invalidCheck3"
+                   aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label-black" for="invalidCheck3">
+                i'am not a robot
+            </label>
+        </div>
+
+        <div class="submit">
+            <button type="submit" id="submit" class="btn btn-primary d-grid gap-2" name="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+<!--İnput Bitiş-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
 </body>
 

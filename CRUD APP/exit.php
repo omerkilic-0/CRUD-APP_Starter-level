@@ -1,14 +1,14 @@
 <?php
-    //oturumumuzu başlatıyoruz.
-    session_start();
+//oturumumuzu başlatıyoruz.
+session_start();
 
-    //verileri sıfırlayarak oturumu kapatıyoruz
-    $_SESSION = array();
+//verileri sıfırlayarak oturumu kapatıyoruz
+$_SESSION = array();
 
-    //outurum verilerini yok ediyoruz
-    session_destroy();
-    
-    //çıkış yaptıktan sonra yönlendiriyoruz
-    header("location: log_in.php");
+//outurum verilerini yok ediyoruz
+session_destroy();
+
+//çıkış yaptıktan sonra yönlendiriyoruz
+header("location: log_in.php");
 
 ?>
